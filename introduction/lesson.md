@@ -53,13 +53,13 @@ To address the performance issues, the concept of the Virtual DOM is used. The V
 ```javascript
 // An unordered list represented as a JavaScript object
 let DOM_node = {
-  tag: 'ul',
-  attributes: { id: 'the_Id' },
-  children: [
-    // children of this node (list items)
-  ]
+    tag: "ul",
+    attributes: { id: "the_Id" },
+    children: [
+        // children of this node (list items)
+    ],
 };
-
+```
 
 ## Syncing the Real and Virtual DOM
 
@@ -70,4 +70,3 @@ When a node in the Virtual DOM is updated, Vue.js compares the old and new versi
 ### Conclusive Thoughts
 
 The Virtual DOM is a key component of Vue.js, enhancing performance and efficiency. It allows for faster updates compared to searching and updating nodes in the real DOM. By minimizing the performance overhead, Vue.js optimizes the web application's performance, especially in large-scale applications.
-```
