@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <body>
+        <!-- This <div> will be replaced by the template of the Vue instance. -->
+        <div id="app"></div>
+
+        <script>
+            myObject = new Vue({
+                el: "#app",
+                template: `
+    <div>
+      <h2> Vue.js Application </h2>
+      <p> Trying typing something in the text bar below</p>
+      <p> <input v-model="message"> </p>
+      <p> {{prependMsg}} {{ message }} </p>
+    </div>
+    `,
+                data: {
+                    message: "",
+                    prependMsg: "Hello! Did you just write: ",
+                },
+            });
+        </script>
+    </body>
+</html>
